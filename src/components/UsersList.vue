@@ -14,6 +14,7 @@
           :sort-desc.sync="sortDesc"
           :per-page="perPage"
           :current-page="currentPage"
+          :sort-compare="nestedSortCompare">
         >
         </b-table>
       </b-row>
@@ -32,6 +33,7 @@
 </template>
 
 <script>
+import parse from "date-fns/parse"
 export default {
   name: "UsersList",
   data() {
@@ -83,6 +85,15 @@ export default {
     users() {
       return this.$store.getters["users"];
     },
+  },
+  methods: {
+      nestedSortCompare(valA, valB, key) {
+        if(key === "date" || key === "regDate") {
+            let dateA = parse(valA[key], "dd.MM.yyyy", new Date()) 
+            let dateB = parse(valB[key], "dd.MM.yyyy", new Date()) 
+            return dateA - dateB
+        }
+      }
   },
   mounted() {
     this.$store.dispatch("getUsers");
