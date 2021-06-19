@@ -7,7 +7,8 @@
 			"email": "kyklina@mail.ru",
 			"phone": "+79223625999",
 			"distance": 5,
-			"payment": 500
+			"payment": 500,
+			"regDate": "19.06.2021"
 		},
 		{
 			"id": 2,
@@ -16,7 +17,8 @@
 			"email": "mokrushina@mail.ru",
 			"phone": "+79881125999",
 			"distance": 10,
-			"payment": 300
+			"payment": 300,
+			"regDate": "18.06.2021"
 		},
 		{
 			"id": 3,
@@ -25,7 +27,8 @@
 			"email": "olga.zavodckaia@mail.ru",
 			"phone": "+79008011000",
 			"distance": 3,
-			"payment": 1500
+			"payment": 1500,
+			"regDate": "20.06.2021"
 		}
 	]
 }
