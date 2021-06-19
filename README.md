@@ -1,4 +1,7 @@
 # charity-race
+## View Demo
+
+Current app version is deployed on https://arsenitem.github.io/charity-race/dist/
 
 ## Project setup
 ```
